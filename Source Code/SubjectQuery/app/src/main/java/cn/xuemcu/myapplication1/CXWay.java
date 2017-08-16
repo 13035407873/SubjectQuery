@@ -92,6 +92,7 @@ public class CXWay {
             BufferedReader bufferedReader = new BufferedReader(read1);
             String lineTxt = null;
             while((lineTxt = bufferedReader.readLine()) != null){
+                lineTxt = lineTxt.replace(" ", "");
                 if(lineTxt.length() >= 2) {
                     if((lineTxt.charAt(0) >= '0' && lineTxt.charAt(0) <= '9') ||
                             (lineTxt.charAt(0) >= 'A' && lineTxt.charAt(0) <= 'Z')) {
